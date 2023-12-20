@@ -39,6 +39,7 @@ export const updateListing = async (req, res, next) => {
   }
 
   try {
+    // update to new updated value
     const updatedListing = await Listing.findByIdAndUpdate(
       req.params.id,
       req.body,
