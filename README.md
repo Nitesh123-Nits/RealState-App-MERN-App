@@ -1,2 +1,1 @@
-
-![linkedin](https://mern-estate-nk.onrender.com/)
+https://mern-estate-nk.onrender.com/
