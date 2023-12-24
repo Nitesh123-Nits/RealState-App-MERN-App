@@ -175,7 +175,7 @@ export default function Profile() {
           onClick={() => fileRef.current.click()}
           src={formData.avatar || currentUser.avatar}
           alt='profile'
-          className='rounded-full h-24 w-24 object-cover cursor-pointer self-center mt-2'
+          className='rounded-full border border-slate-950 h-24 w-24 object-cover cursor-pointer self-center mt-2'
         />
         <p className='text-sm self-center'>
           {fileUploadError ? (
@@ -215,7 +215,7 @@ export default function Profile() {
         />
         <button
           disabled={loading}
-          className='bg-slate-700 text-white  p-3 uppercase hover:opacity-95 disabled:opacity-80'
+          className='bg-orange-700 text-white  p-3 uppercase hover:opacity-95 disabled:opacity-80'
         >
           {loading ? 'Loading...' : 'Update'}
         </button>
@@ -257,7 +257,7 @@ export default function Profile() {
           {userListings.map((listing) => (
             <div
               key={listing._id}
-              className='border  p-3 flex justify-between items-center gap-4'
+              className='border border-slate-950  p-3 flex justify-between items-center gap-4'
             >
               <Link to={`/listing/${listing._id}`}>
                 <img

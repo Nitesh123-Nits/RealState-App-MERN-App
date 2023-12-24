@@ -179,7 +179,7 @@ export default function CreateListing() {
           <input
             type='text'
             placeholder='Name'
-            className='border p-3 rounded-lg'
+            className='border p-3 '
             id='name'
             maxLength='62'
             minLength='10'
@@ -190,7 +190,7 @@ export default function CreateListing() {
           <textarea
             type='text'
             placeholder='Description'
-            className='border p-3 rounded-lg'
+            className='border p-3 '
             id='description'
             required
             onChange={handleChange}
@@ -199,7 +199,7 @@ export default function CreateListing() {
           <input
             type='text'
             placeholder='Address'
-            className='border p-3 rounded-lg'
+            className='border p-3 '
             id='address'
             required
             onChange={handleChange}
@@ -265,7 +265,7 @@ export default function CreateListing() {
                 min='1'
                 max='10'
                 required
-                className='p-3 border border-gray-300 rounded-lg'
+                className='p-3 border border-gray-300 '
                 onChange={handleChange}
                 value={formData.bedrooms}
               />
@@ -278,7 +278,7 @@ export default function CreateListing() {
                 min='1'
                 max='10'
                 required
-                className='p-3 border border-gray-300 rounded-lg'
+                className='p-3 border border-gray-300 '
                 onChange={handleChange}
                 value={formData.bathrooms}
               />
@@ -291,7 +291,7 @@ export default function CreateListing() {
                 min='50'
                 max='10000000'
                 required
-                className='p-3 border border-gray-300 rounded-lg'
+                className='p-3 border border-gray-300 '
                 onChange={handleChange}
                 value={formData.regularPrice}
               />
@@ -310,7 +310,7 @@ export default function CreateListing() {
                   min='0'
                   max='10000000'
                   required
-                  className='p-3 border border-gray-300 rounded-lg'
+                  className='p-3 border border-gray-300 '
                   onChange={handleChange}
                   value={formData.discountPrice}
                 />
@@ -344,7 +344,8 @@ export default function CreateListing() {
               type='button'
               disabled={uploading}
               onClick={handleImageSubmit}
-              className='p-3 text-green-700 border border-green-700 rounded uppercase hover:shadow-lg disabled:opacity-80'
+              className='p-3  text-green-700 border border-green-700 
+               uppercase hover:shadow-lg disabled:opacity-80'
             >
               {uploading ? 'Uploading...' : 'Upload'}
             </button>
@@ -356,17 +357,17 @@ export default function CreateListing() {
             formData.imageUrls.map((url, index) => (
               <div
                 key={url}
-                className='flex justify-between p-3 border items-center'
+                className='flex justify-between p-3 border border-slate-950 items-center'
               >
                 <img
                   src={url}
                   alt='listing image'
-                  className='w-20 h-20 object-contain rounded-lg'
+                  className='w-20 h-20 object-contain '
                 />
                 <button
                   type='button'
                   onClick={() => handleRemoveImage(index)}
-                  className='p-3 text-red-700 rounded-lg uppercase hover:opacity-75'
+                  className='p-3 text-red-700 uppercase hover:opacity-75'
                 >
                   Delete
                 </button>
@@ -374,7 +375,7 @@ export default function CreateListing() {
             ))}
           <button
             disabled={loading || uploading}
-            className='p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80'
+            className='p-3 bg-orange-700 text-white  uppercase hover:opacity-95 disabled:opacity-80'
           >
             {loading ? 'Updating...' : 'Update listing'}
           </button>

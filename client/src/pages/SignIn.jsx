@@ -52,7 +52,7 @@ function SignIn() {
          className='border p-3 ' id='email' onChange={handleChange}/>
          <input type="password" placeholder='password'
          className='border p-3 ' id='password' onChange={handleChange}/>
-         <button disabled={loading} className='bg-slate-700 text-white p-3 
+         <button disabled={loading} className='bg-orange-700 text-white p-3 
           uppercase hover:opacity-90 disabled:opacity-80'>{loading?'Loading..':'Sign In'}</button>
          <OAuth/>
       </form>
