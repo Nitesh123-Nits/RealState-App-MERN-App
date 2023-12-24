@@ -1,2 +1,2 @@
 
-[![linkedin]](https://mern-estate-nk.onrender.com/)
+![linkedin](https://mern-estate-nk.onrender.com/)
